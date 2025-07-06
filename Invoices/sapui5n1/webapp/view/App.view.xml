@@ -1,0 +1,28 @@
+<mvc:View
+    id="_IDGenView"
+    controllerName="logali.sapui5n1.controller.App"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page
+                    id="_Page"
+                    title="{i18n>appTitle}">
+                    <content>
+                        <Button
+                            id="_IDGenButton"
+                            text="{i18n>showHelloButtonText}"
+                            press=".onShowHello"/>
+                        <Input
+                            id="_IDGenInput"
+                            value="{/recipient/name}"
+                            description="Hello {/recipient/name}"
+                            valueLiveUpdate="true"
+                            width="60%"/>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
