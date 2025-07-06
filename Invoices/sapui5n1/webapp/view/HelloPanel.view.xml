@@ -1,0 +1,33 @@
+<mvc:View
+    id="_IDGenViewHP"
+    controllerName="logali.sapui5n1.controller.HelloPanel"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+>
+    <Panel
+        id="_IDGenPanel2"
+        headerText="{i18n>helloPanel}"
+        class="sapUiResponsiveMargin"
+        width="auto"
+    >
+        <content>
+            <Button
+                id="_IDGenButton2"
+                text="{i18n>showHelloButtonText}"
+                press=".onShowHello"
+                class="sapUiSmallMarginEnd"
+            />
+            <Input
+                id="_IDGenInput2"
+                value="{/recipient/name}"
+                valueLiveUpdate="true"
+                width="60%"
+            />
+            <Text
+                id="_IDGenText2"
+                text="Hello {/recipient/name}"
+                class="sapUiSmallMargin boldElements sapthemeHighlight-asColor"
+            />
+        </content>
+    </Panel>
+</mvc:View>
