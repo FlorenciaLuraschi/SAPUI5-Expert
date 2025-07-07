@@ -14,6 +14,8 @@
     >
         <content>
             <Button
+                id="helloDialogButton"
+                icon="sap-icon://action"
                 text="{i18n>HelloDialogBut}"
                 press=".onOpenDialog"
                 class="sapUiSmallMarginEnd"
@@ -37,5 +39,8 @@
             />
         </content>
     </Panel>
-    <core:Fragment fragmentName="logali.sapui5n1.view.Form01" type="XML"/>
+    <core:Fragment
+        fragmentName="logali.sapui5n1.view.Form01"
+        type="XML"
+    />
 </mvc:View>
