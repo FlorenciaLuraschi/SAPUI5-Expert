@@ -23,6 +23,9 @@
                         <mvc:XMLView
                             viewName="logali.sapui5n1.view.HelloPanel"
                         />
+                        <mvc:XMLView
+                            viewName="logali.sapui5n1.view.InvoicesList"
+                        />
                     </content>
                 </Page>
             </pages>
