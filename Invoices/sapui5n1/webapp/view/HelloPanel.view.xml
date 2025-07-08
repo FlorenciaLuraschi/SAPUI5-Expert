@@ -3,6 +3,8 @@
     controllerName="logali.sapui5n1.controller.HelloPanel"
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    displayBlock="true"
 >
     <Panel
         id="_IDGenPanel2"
@@ -11,6 +13,13 @@
         width="auto"
     >
         <content>
+            <Button
+                id="helloDialogButton"
+                icon="sap-icon://action"
+                text="{i18n>HelloDialogBut}"
+                press=".onOpenDialog"
+                class="sapUiSmallMarginEnd"
+            />
             <Button
                 id="_IDGenButton2"
                 text="{i18n>showHelloButtonText}"
@@ -30,4 +39,8 @@
             />
         </content>
     </Panel>
+    <core:Fragment
+        fragmentName="logali.sapui5n1.view.Form01"
+        type="XML"
+    />
 </mvc:View>
