@@ -11,8 +11,18 @@
                     id="_Page"
                     title="{i18n>appTitle}"
                 >
+                    <headerContent>
+                        <Button
+                            id="helloDialogheader"
+                            icon="sap-icon://action"
+                            press=".onOpenDialogHeader"
+                            class="sapUiSmallMarginEnd"
+                        />
+                    </headerContent>
                     <content>
-                        <mvc:XMLView viewName="logali.sapui5n1.view.HelloPanel"/>
+                        <mvc:XMLView
+                            viewName="logali.sapui5n1.view.HelloPanel"
+                        />
                     </content>
                 </Page>
             </pages>

@@ -13,6 +13,9 @@ sap.ui.define([
         return Controller.extend("logali.sapui5n1controller.App", {
             onInit: function () {
                 
+            },
+            onOpenDialogHeader: function(){
+                this.getOwnerComponent().openHelloDialog();
             }
         });
     });
