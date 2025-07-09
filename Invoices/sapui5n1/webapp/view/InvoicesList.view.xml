@@ -3,25 +3,26 @@
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc"
 >
-    <List id="invoicesList"
+    <List
+        id="invoicesList"
         headerText="{i18n>invoicesListTitle}"
         class="sapuiResponsiveMargin"
         width="auto"
-        items="{invoices>/Invoices}"
+        items="{path : 'invoices>/Invoices', sorter : {path : 'ShipperName', group : true}}"
     >
-    <!-- al agregar el toolbar pierdo el titulo headerText por eso se debe volver a agregar -->
+       
         <headerToolbar>
             <Toolbar>
-            <Title text="{i18n>invoicesListTitle}"></Title>
+                <Title text="{i18n>invoicesListTitle}" />
                 <ToolbarSpacer />
-                <SearchField width="50%" search=".onFilterInvoices"/>
+                <SearchField
+                    width="50%"
+                    search=".onFilterInvoices"
+                />
             </Toolbar>
         </headerToolbar>
         <items>
-            <!-- title Estamos concatenando dos elementos de la lista -->
-            <!-- number agregamos otra columna con los precios traidos desde el arch invoices.json y la moneda desde el controllador -->
-            <!-- formatOptions permite dar formato con showMeasure en false saca el currency de la vista -->
-            <!-- numberUnit es otra forma de mostrar la momenda (debajo del precio en un tamaño más pequeño) -->
+            
             <ObjectListItem
                 title="{invoices>Quantity} x {invoices>ProductName}"
                 number="{parts : [{path:'invoices>ExtendedPrice'}, {path:'currency>/usd'}], 
