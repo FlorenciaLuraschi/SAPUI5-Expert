@@ -8,7 +8,7 @@
         headerText="{i18n>invoicesListTitle}"
         class="sapuiResponsiveMargin"
         width="auto"
-        items="{path : 'invoices>/Invoices', sorter : {path : 'ShipperName', group : true}}"
+        items="{path : 'northwind>/Invoices', sorter : {path : 'ShipperName', group : true}}"
     >
         <!-- al agregar el toolbar pierdo el titulo headerText por eso se debe volver a agregar -->
         <headerToolbar>
@@ -23,24 +23,25 @@
         </headerToolbar>
         <items>
             <!-- title Estamos concatenando dos elementos de la lista -->
-            <!-- number agregamos otra columna con los precios traidos desde el arch invoices.json y la moneda desde el controllador -->
+            <!-- number agregamos otra columna con los precios traidos desde el arch northwind.json y la moneda desde el controllador -->
             <!-- formatOptions permite dar formato con showMeasure en false saca el currency de la vista -->
             <!-- numberUnit es otra forma de mostrar la momenda (debajo del precio en un tamaño más pequeño) -->
             <ObjectListItem
-                title="{invoices>Quantity} x {invoices>ProductName}"
-                number="{parts : [{path:'invoices>ExtendedPrice'}, {path:'currency>/usd'}], 
+                title="{northwind>Quantity} x {northwind>ProductName}"
+                number="{parts : [{path:'northwind>ExtendedPrice'}, {path:'currency>/usd'}], 
                 type:'sap.ui.model.type.Currency',
                 formatOptions: {
                 showMeasure: false
                 }}"
                 numberUnit="{currency>/usd}"
-                numberState="{= ${invoices>ExtendedPrice} > 50 ? 'Success' : 'Error'}"
+                numberState="{= ${northwind>ExtendedPrice} > 50 ? 'Success' : 'Error'}"
             >
-                <firstStatus>
+            <!-- No lo tenemos en el northwind -->
+                <!-- <firstStatus>
                     <ObjectStatus
-                        text="{path: 'invoices>Status', formatter : '.formatter.invoicesStatus'}"
+                        text="{path: 'northwind>Status', formatter : '.formatter.invoicesStatus'}"
                     />
-                </firstStatus>
+                </firstStatus> -->
             </ObjectListItem>
         </items>
     </List>
