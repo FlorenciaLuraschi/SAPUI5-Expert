@@ -18,7 +18,7 @@ sap.ui.define([
             MessageBox.error(oError.message);
         }).finally(function () {
             // initialize the embedded component on the HTML page
-            sap.ui.require(["module:sap/ui/core/ComponentSupport"]);
+            sap.ui.require(["sap/ui/core/ComponentSupport"]);
         });
 
 
