@@ -8,7 +8,7 @@ sap.ui.define([
     function (InvoicesFormatter, ResourceModel) {
         "use strict";
 
-        QUnit.module("Invoices Status", {
+        QUnit.module("Qnvoices Status", {
             beforeEach: function () {
                 this._oResourceModel = new ResourceModel({
                     bundleUrl: sap.ui.require.toUrl("logali/sapui5n1") + "i18n/i18n.properties"
@@ -34,9 +34,9 @@ sap.ui.define([
             let fnIsolatedFormatter = InvoicesFormatter.invoiceStatus.bind(oControllerStub);
                    
             // Assert
-            assert.strictEqual(fnIsolatedFormatter("A"), "New", "The invoices status A is correct");
-            assert.strictEqual(fnIsolatedFormatter("B"), "In Progress", "The invoices status Status B is correct");
-            assert.strictEqual(fnIsolatedFormatter("C"), "Done", "The invoices status C is correct");
-         
+            assert.strictEqual(fnIsolatedFormatter("A"), "New", "The invoices status for A is correct");
+            assert.strictEqual(fnIsolatedFormatter("B"), "In Progress", "The invoices status Status for B is correct");
+            assert.strictEqual(fnIsolatedFormatter("C"), "Done", "The invoices status for C is correct");
+            
         });
     });
