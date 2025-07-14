@@ -11,7 +11,7 @@ sap.ui.define([
         QUnit.module("Qnvoices Status", {
             beforeEach: function () {
                 this._oResourceModel = new ResourceModel({
-                    bundleUrl: sap.ui.require.toUrl("logali/sapui5n1") + "i18n/i18n.properties"
+                    bundleUrl: sap.ui.require.toUrl("logali/sapui5n1") + "/i18n/i18n.properties"
                 });
             },
             afterEach: function () {
