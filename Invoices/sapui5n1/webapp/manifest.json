@@ -101,8 +101,8 @@
           ]
         },
         {
-          "name": "RouteDetails",
-          "pattern": "details",
+          "name": "Details",
+          "pattern": "details/{invoicePath}",
           "target": [
             "TargetDetails"
           ]
@@ -110,16 +110,10 @@
       ],
       "targets": {
         "TargetOverview": {
-          "viewType": "XML",
-          "transition": "slide",
-          "clearControlAggregation": false,
           "id": "Overview",
           "name": "Overview"
         },
         "TargetDetails": {
-          "viewType": "XML",
-          "transition": "slide",
-          "clearControlAggregation": false,
           "id": "Details",
           "name": "Details"
         }
