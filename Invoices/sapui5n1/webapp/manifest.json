@@ -111,15 +111,15 @@
       "targets": {
         "TargetOverview": {
           "viewType": "XML",
-                    "transition": "slide",
-                    "clearControlAggregation": false,
+          "transition": "slide",
+          "clearControlAggregation": false,
           "id": "Overview",
           "name": "Overview"
         },
         "TargetDetails": {
           "viewType": "XML",
-                    "transition": "slide",
-                    "clearControlAggregation": false,
+          "transition": "slide",
+          "clearControlAggregation": false,
           "id": "Details",
           "name": "Details"
         }
@@ -128,7 +128,7 @@
     "rootView": {
       "viewName": "logali.sapui5n1.view.App",
       "type": "XML",
-      "id": "App",
+      "id": "app",
       "async": true
     }
   }

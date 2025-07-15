@@ -5,11 +5,8 @@
       "name": "sapui5n1-config1",
       "type": "node",
       "request": "launch",
-      "cwd": "${workspaceFolder}/sapui5n1",
+      "cwd": "${workspaceFolder}/Invoices/sapui5n1",
       "runtimeExecutable": "npx",
-      "windows": {
-        "runtimeExecutable": "npx.cmd"
-      },
       "runtimeArgs": [
         "fiori",
         "run"
@@ -31,11 +28,8 @@
       "name": "sapui5n1 mock-config2",
       "type": "node",
       "request": "launch",
-      "cwd": "${workspaceFolder}/sapui5n1",
+      "cwd": "${workspaceFolder}/Invoices/sapui5n1",
       "runtimeExecutable": "npx",
-      "windows": {
-        "runtimeExecutable": "npx.cmd"
-      },
       "runtimeArgs": [
         "fiori",
         "run"
@@ -57,11 +51,8 @@
       "name": "sapui5n1 test-config3",
       "type": "node",
       "request": "launch",
-      "cwd": "${workspaceFolder}/sapui5n1",
+      "cwd": "${workspaceFolder}/Invoices/sapui5n1",
       "runtimeExecutable": "npx",
-      "windows": {
-        "runtimeExecutable": "npx.cmd"
-      },
       "runtimeArgs": [
         "fiori",
         "run"
@@ -83,11 +74,8 @@
       "name": "sapui5n1 IntegrationOPA-config4",
       "type": "node",
       "request": "launch",
-      "cwd": "${workspaceFolder}/sapui5n1",
+      "cwd": "${workspaceFolder}/Invoices/sapui5n1",
       "runtimeExecutable": "npx",
-      "windows": {
-        "runtimeExecutable": "npx.cmd"
-      },
       "runtimeArgs": [
         "fiori",
         "run"
