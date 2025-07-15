@@ -35,6 +35,8 @@
                 }}"
                 numberUnit="{currency>/usd}"
                 numberState="{= ${northwind>ExtendedPrice} > 50 ? 'Success' : 'Error'}"
+                type="Navigation"
+                press="navigateToDetails"
             >
             <!-- No lo tenemos en el northwind -->
                 <!-- <firstStatus>

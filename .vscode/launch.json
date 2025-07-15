@@ -7,9 +7,6 @@
       "request": "launch",
       "cwd": "${workspaceFolder}/Invoices/sapui5n1",
       "runtimeExecutable": "npx",
-      "windows": {
-        "runtimeExecutable": "npx.cmd"
-      },
       "runtimeArgs": [
         "fiori",
         "run"
@@ -28,14 +25,11 @@
       }
     },
     {
-      "name": "mocksapui5n1-config2",
+      "name": "sapui5n1 mock-config2",
       "type": "node",
       "request": "launch",
       "cwd": "${workspaceFolder}/Invoices/sapui5n1",
       "runtimeExecutable": "npx",
-      "windows": {
-        "runtimeExecutable": "npx.cmd"
-      },
       "runtimeArgs": [
         "fiori",
         "run"
@@ -54,14 +48,11 @@
       }
     },
     {
-      "name": "testsapui5n1-config2",
+      "name": "sapui5n1 test-config3",
       "type": "node",
       "request": "launch",
       "cwd": "${workspaceFolder}/Invoices/sapui5n1",
       "runtimeExecutable": "npx",
-      "windows": {
-        "runtimeExecutable": "npx.cmd"
-      },
       "runtimeArgs": [
         "fiori",
         "run"
@@ -69,6 +60,29 @@
       "args": [
         "--open",
         "test/unit/unitTests.qunit.html"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/Invoices/sapui5n1\"}",
+        "FIORI_TOOLS_BACKEND_CONFIG": "[{\"url\":\"https://services.odata.org/\",\"authenticationType\":\"NoAuthentication\",\"destination\":\"Northwind\",\"path\":\"/V2\"}]",
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false"
+      }
+    },
+    {
+      "name": "sapui5n1 IntegrationOPA-config4",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/Invoices/sapui5n1",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--open",
+        "test/integration/opaTests.quint.html"
       ],
       "console": "internalConsole",
       "internalConsoleOptions": "openOnSessionStart",

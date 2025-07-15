@@ -21,6 +21,9 @@ sap.ui.define([
 
                 this._helloDialog = new HelloDialog(this.getRootControl());
 
+                //create the view based on the url/hash (para el enrutamiento)
+                this.getRouter().initialize();
+
             },
 
             exit: function () {
