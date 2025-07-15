@@ -1,0 +1,11 @@
+<mvc:View
+    controllerName="logali.sapui5n1.controller.Details"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    displayBlock="true"
+>
+    <Page title="{i18n>detailsPageTitle}">
+        <ObjectHeader title="Invoice" />
+    </Page>
+</mvc:View>

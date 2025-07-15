@@ -95,16 +95,33 @@
       "routes": [
         {
           "name": "RouteApp",
-          "pattern": ":?query:",
+          "pattern": "",
           "target": [
-            "TargetApp"
+            "TargetOverview"
+          ]
+        },
+        {
+          "name": "RouteDetails",
+          "pattern": "details",
+          "target": [
+            "TargetDetails"
           ]
         }
       ],
       "targets": {
-        "TargetApp": {
-          "id": "App",
-          "name": "App"
+        "TargetOverview": {
+          "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+          "id": "Overview",
+          "name": "Overview"
+        },
+        "TargetDetails": {
+          "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+          "id": "Details",
+          "name": "Details"
         }
       }
     },
