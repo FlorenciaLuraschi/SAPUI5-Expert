@@ -1,5 +1,5 @@
 sap.ui.define([
-    'sap/ui/core/control',
+    'sap/ui/core/Control',
     'sap/m/RatingIndicator',
     'sap/m/Label',
     'sap/m/Button'

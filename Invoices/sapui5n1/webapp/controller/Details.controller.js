@@ -35,6 +35,13 @@ sap.ui.define([
                     const oRouter = UIComponent.getRouterFor(this);
                     oRouter.navTo("RouteApp", {}, true);
                 }
+            },
+
+            onRatingChange: function (oEvent) {
+                const fValue = oEvent.getParameter("value");
+                const oResourceBundle = this.getView().getModel("i18n").getResourceBundle();
+
+                sap.m.MessageToast.show(oResourceBundle.getText("ratingConfirmation",[fValue]));
             }
         });
     });
