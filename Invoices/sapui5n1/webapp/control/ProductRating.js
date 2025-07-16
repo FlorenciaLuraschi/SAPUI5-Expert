@@ -98,8 +98,14 @@ sap.ui.define([
                 this.getAggregation("_rating").setValue(fValue);
             },
 
-            renderer: function (oRn, oControl) {
-
+            renderer: function (oRm, oControl) {
+                oRm.openStart("div", oControl);
+                oRm.class("productRating");
+                oRm.openEnd();
+                oRm.renderControl(oControl.getAggregation("_rating"));
+                oRm.renderControl(oControl.getAggregation("_label"));
+                oRm.renderControl(oControl.getAggregation("_button"));
+                oRm.close("div");
             }
         });
     });
