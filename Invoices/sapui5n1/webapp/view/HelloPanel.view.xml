@@ -11,6 +11,8 @@
         headerText="{i18n>helloPanel}"
         class="sapUiResponsiveMargin"
         width="auto"
+        expandable="{device>/system/phone}"
+        expanded="{= !${device>/system/phone}}"
     >
         <content>
             <Button

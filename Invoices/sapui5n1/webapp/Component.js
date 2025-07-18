@@ -19,6 +19,10 @@ sap.ui.define([
                 // set data model on the view
                 this.setModel(Models.createRecipient());
 
+                //set the device model
+                this.setModel(Models.createDeviceModel(), "device");
+
+
                 this._helloDialog = new HelloDialog(this.getRootControl());
 
                 //create the view based on the url/hash (para el enrutamiento)
