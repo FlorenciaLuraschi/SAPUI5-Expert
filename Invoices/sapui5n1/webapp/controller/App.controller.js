@@ -12,7 +12,7 @@ sap.ui.define([
         "use strict";
         return Controller.extend("logali.sapui5n1controller.App", {
             onInit: function () {
-                
+                this.getView().addStyleClass(this.getOwnerComponent().getContentDesintyClass());
             },
             onOpenDialogHeader: function(){
                 this.getOwnerComponent().openHelloDialog();
