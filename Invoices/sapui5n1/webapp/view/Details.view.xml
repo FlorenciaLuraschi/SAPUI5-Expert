@@ -6,8 +6,16 @@
     xmlns:logalig="logali.sapui5n1.control"
     displayBlock="true"
 >
-    <Page title="{i18n>detailsPageTitle}" showNavButton="true" navButtonPress=".onNavBack">
-        <ObjectHeader title="{northwind>Quantity} x {northwind>ProductName}">
+    <Page
+        title="{i18n>detailsPageTitle}"
+        showNavButton="true"
+        navButtonPress=".onNavBack"
+    >
+        <ObjectHeader
+            title="{northwind>Quantity} x {northwind>ProductName}"
+            responsive="true"
+            fullScreenOptimized="true"
+        >
             <attributes>
                 <ObjectAttribute text="{northwind>ShipAddress}" />
                 <ObjectAttribute text="{northwind>ShipCity}" />
@@ -18,6 +26,10 @@
                 <ObjectAttribute text="{northwind>CustomerName}" />
             </attributes>
         </ObjectHeader>
-        <logalig:ProductRating id="rating" class="sapUiSmallMarginBeginEnd" change=".onRatingChange" />
+        <logalig:ProductRating
+            id="rating"
+            class="sapUiSmallMarginBeginEnd"
+            change=".onRatingChange"
+        />
     </Page>
 </mvc:View>

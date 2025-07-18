@@ -11,6 +11,8 @@
         headerText="{i18n>helloPanel}"
         class="sapUiResponsiveMargin"
         width="auto"
+        expandable="{device>/system/phone}"
+        expanded="{= !${device>/system/phone}}"
     >
         <content>
             <Button
@@ -18,13 +20,13 @@
                 icon="sap-icon://action"
                 text="{i18n>HelloDialogBut}"
                 press=".onOpenDialog"
-                class="sapUiSmallMarginEnd"
+                class="sapUiSmallMarginEnd sapUiVisibleOnlyDesktop"
             />
             <Button
                 id="_IDGenButton2"
                 text="{i18n>showHelloButtonText}"
                 press=".onShowHello"
-                class="sapUiSmallMarginEnd"
+                class="sapUiSmallMarginEnd sapUiHideOnDesktop"
             />
             <Input
                 id="_IDGenInput2"
